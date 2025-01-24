@@ -1,0 +1,23 @@
+.button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--blue100);
+}
+
+.primary {
+  background-color: var(--white);
+  color: var(--blue100);
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid var(--blue100);
+  color: var(--blue100);
+}

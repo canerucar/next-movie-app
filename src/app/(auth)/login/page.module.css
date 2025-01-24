@@ -1,0 +1,81 @@
+.loginWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 40px;
+  margin: 20px;
+  flex: 1;
+}
+
+.loginHeaderTitle {
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--white);
+  padding: 20px 0;
+}
+
+.loginContainerWrapper {
+  padding: 32px;
+  border: 1px solid var(--gray110);
+  border-radius: 8px;
+  max-width: 440px;
+  width: 100%;
+}
+
+.loginContainerTitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.loginContainerInputLabel {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.loginContainerform {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.loginContainerInput {
+  height: 44px;
+  padding: 10px;
+  border: 1px solid var(--gray100);
+  border-radius: 4px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.loginContainerbutton {
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: var(--white);
+  color: var(--blue100);
+  border: 1px solid var(--blue100);
+  margin-top: 20px;
+}
+
+.errorMessage {
+  color: var(--red100);
+  font-size: 12px;
+}
+
