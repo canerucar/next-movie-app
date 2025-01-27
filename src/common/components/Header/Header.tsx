@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { RootState } from '@/store';
 import type { MovieState } from '@/common/types/movieTypes';
 import { setSearchQuery } from '@/store/features/movieSlice';
-import styles from './Header.module.css';
+import styles from '@/common/components/Header/Header.module.css';
 
 export default function Header() {
   const pathname = usePathname();

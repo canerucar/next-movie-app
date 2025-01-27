@@ -1,4 +1,4 @@
-import styles from './loading.module.css';
+import styles from '@/common/components/Loading/Loading.module.css';
 
 export default function GlobalLoading() {
   return (

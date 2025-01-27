@@ -9,7 +9,7 @@ import type { MovieState } from '@/common/types/movieTypes';
 import { filterMovies, sortMovies, createMovieId } from '@/common/utils/movieHelpers';
 import Header from '@/common/components/Header/Header';
 import Footer from '@/common/components/Footer/Footer';
-import styles from './page.module.css';
+import styles from '@/app/movies/page.module.css';
 import Select from '@/common/components/Select/Select';
 import Checkbox from '@/common/components/Checkbox/Checkbox';
 

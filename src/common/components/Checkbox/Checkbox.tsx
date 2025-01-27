@@ -1,4 +1,4 @@
-import { CheckboxProps } from './types';
+import { CheckboxProps } from '@/common/components/Checkbox/types';
 
 export default function Checkbox({ 
   checked, 

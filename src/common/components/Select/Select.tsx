@@ -1,4 +1,4 @@
-import { SelectProps } from './types';
+import { SelectProps } from '@/common/components/Select/types';
 
 export default function Select({ 
   value, 

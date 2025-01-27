@@ -9,7 +9,7 @@ import { movieService } from '@/common/services/movieService';
 import { createMovieId } from '@/common/utils/movieHelpers';
 import Header from '@/common/components/Header/Header';
 import Footer from '@/common/components/Footer/Footer';
-import styles from './page.module.css';
+import styles from '@/app/movies/[id]/page.module.css';
 
 export default function MovieDetail({ params }: MovieDetailProps) {
   const resolvedParams = use(params);
