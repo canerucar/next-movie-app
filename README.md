@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎬 Next.js Movie App
 
-## Getting Started
+A modern movie browsing application built with Next.js, featuring a responsive design and real-time search capabilities.
 
-First, run the development server:
+🔗 **Live Demo:** [https://next-movie-app-ecru.vercel.app/](https://next-movie-app-ecru.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- Movie listing with search functionality
+- Detailed movie information pages
+- Favorite movies system
+- Sorting options (by name, year, IMDB rating)
+- Responsive design for all devices
+- TV Series indicators
+- IMDB ratings display
+
+## 🛠 Tech Stack
+
+- **Frontend:**
+  - Next.js
+  - React
+  - TypeScript
+  - Redux Toolkit (State Management)
+  - CSS Modules (Styling)
+  - Axios (API requests)
+
+- **Backend:**
+  - json-server (REST API)
+  - Node.js
+
+## 🏗 Project Structure
+
+```
+next-movie-app/
+├── src/
+│   ├── app/          # Next.js app directory
+│   ├── common/       # Shared components, types, and utilities
+│   ├── store/        # Redux store configuration
+│   └── server/       # json-server configuration
+├── public/           # Static assets
+└── ...config files
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root directory:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+# Development
+NEXT_PUBLIC_API_URL=http://localhost:3001
 
-## Learn More
+# Production
+NEXT_PUBLIC_API_URL=https://your-production-api-url
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:** Deployed on [Vercel](https://vercel.com)
+- **Backend:** Deployed on [Railway](https://railway.app)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💻 Local Development
 
-## Deploy on Vercel
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/next-movie-app.git
+cd next-movie-app
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Install dependencies:
+```bash
+npm install
+cd server && npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Start the development server:
+```bash
+# Terminal 1 - Start the API server
+cd server
+npm start
+
+# Terminal 2 - Start the Next.js app
+npm run dev
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## 📝 API Endpoints
+
+- `GET /movies` - Get all movies
+- `GET /movies/:id` - Get movie by ID
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check [issues page](your-issues-link).
+
+## 📜 License
+
+This project is [MIT](LICENSE) licensed.
+
+---
+
+Made with ❤️ by [caner](https://github.com/canerucar)
