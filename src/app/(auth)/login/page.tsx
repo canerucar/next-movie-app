@@ -9,8 +9,8 @@ import Footer from '@/common/components/Footer/Footer';
 import Button from '@/common/components/Button/Button';
 import Input from '@/common/components/Input/Input';
 
-import styles from './page.module.css';
-import ChevronRightIcon from '../../../../public/icons/chevronRight.svg';
+import styles from '@/app/(auth)/login/page.module.css';
+import ChevronRightIcon from '@public/icons/chevronRight.svg';
 
 export default function Login() {
   const router = useRouter();
@@ -19,7 +19,6 @@ export default function Login() {
   });
 
   const onSubmit = (data: IFormInput) => {
-    console.log(data);
     router.push("/movies");
   };
 

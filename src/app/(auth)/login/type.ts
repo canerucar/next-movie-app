@@ -1,8 +1,4 @@
-interface IFormInput {
+export interface IFormInput {
   email: string;
   password: string;
-}
-
-export type {
-  IFormInput
 }

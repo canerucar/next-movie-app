@@ -1,0 +1,122 @@
+.detailWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.detailPageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--gray50);
+}
+
+.detailContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.imageSection {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.detailImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.detailHeader {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.detailHeader h1 {
+  font-size: 32px;
+  margin: 0;
+  color: var(--black);
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--gray140);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--gray110);
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.favorited {
+  color: var(--red100);
+}
+
+.metaInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.metaImdb {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black100);
+}
+
+.metaCategory {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--gray150);
+}
+
+.summary p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: var(--black);
+  line-height: 40px;
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .imageSection {
+    height: 300px;
+  }
+
+  .detailHeader {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .metaInfo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} 

@@ -7,6 +7,7 @@
 :root {
   /* variables */
   --black: #000000;
+  --black100: #111827;
   --white: #ffffff;
   --white100: #f9f9f9;
   --blue100: #3B82F6;
@@ -15,6 +16,8 @@
   --gray110: #D1D5DB;
   --gray120: #6B7280;
   --gray130: #374151;
+  --gray140: #F3F4F680;
+  --gray150: #9CA3AF;
 }
 
 .flexCenter {
