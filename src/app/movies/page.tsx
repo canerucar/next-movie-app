@@ -72,7 +72,7 @@ export default function Movies() {
             ) : (
               filteredMovies.map((movie) => (
                 <div key={createMovieId(movie)} className={styles.movieCard}>
-                  <Link href={`/movies/${movie.imdb}`}>
+                  <Link href={`/movies/${movie.id}`}>
                     <Image
                       src={movie.cover}
                       alt={movie.name}

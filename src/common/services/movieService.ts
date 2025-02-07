@@ -15,7 +15,7 @@ export const movieService = {
 
   async getMovieById(id: string): Promise<Movie> {
     const response = await axios.get(`${API_URL}/movies`);
-    const movie = response.data.find((movie: Movie) => movie.imdb === id);
+    const movie = response.data.find((movie: Movie) => movie.id === id);
     
     if (!movie) {
       throw new Error('Movie not found');
